@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Este tipo de elementos, nos permiten agrupar diversos estilos de vistas,
+es decir de drawables el uno sobre el otro, lo que al final nos permite
+foramr disenos mas complejos, en este caso solo lo usamos para agrupar
+diversos estilos para tener un cuadrado con un borde inferior-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--Estas lineas de android left right and top , le mueven al borde a tal
+     punto que lo esconden, sacandolo del frame y haciendo que solo se vea el
+      borde de abajo, para cambiar donde sale el borde, simplemente movemos
+      los -5dp y a que lado referencian.-->
+    <item
+            android:top="-5dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/palette_Dodger_Blue" />
+
+            <stroke
+                    android:width="5dp"
+                    android:color="@color/palette_Fog" />
+        </shape>
+    </item>
+
+</layer-list>

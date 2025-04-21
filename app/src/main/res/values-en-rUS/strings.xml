@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CountryInformationViewer</string>
+    <string name="select_a_continent_caption">Select a Continent From The List</string>
+    <string name="select_a_country_caption">Select a Country From The List</string>
+    <string name="here_is_their_info_caption">Here is Their Info</string>
+    <string name="remove_continent_button">Remove The Selected Continent
+    </string>
+    <string name="removing_contient_dialog_header">You are about to remove the
+        continent: %1$s!
+    </string>
+    <string name="removing_country_dialog_header">You are about to remove the
+        country: %s!
+    </string>
+    <string name="removing_continent_confirmation_message">Are you sure
+    you want to remove this continent?</string>
+    <string name="removing_country_confirmation_message">Are you sure
+        you want to remove this country?</string>
+    <string name="remove_message_on_confirm_button_name">Yes</string>
+    <string name="remove_message_on_reject_button_name">No, go back.</string>
+    <string name="priority_error_code_message">Error Code 0x0001 -
+        [Raised] %1$s</string>
+    <string name="load_all_content_again_dialog_header">You are about
+        to load all image and continent data again!</string>
+    <string name="load_all_content_again_dialog_message">Are you sure
+        you would like to load all image and continent data again?</string>
+    <string name="load_all_content_again_menu_item">Load All Image And
+        Continent Information</string>
+</resources>

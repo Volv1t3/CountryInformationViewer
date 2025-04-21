@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">CountryInformationViewer</string>
+    <!--! Strings informativas de los headers de la aplicacion-->
+    <string name="select_a_continent_caption">Selecciona un Continente de la
+        Lista
+    </string>
+    <string name="select_a_country_caption">"Selecciona un Pais de la Lista "</string>
+    <string name="here_is_their_info_caption">Aquí esta la información del
+        pais\n
+    </string>
+    <!--! Strings informativas de los botones para eliminar un continente de
+    la aplicacion-->
+    <string name="remove_continent_button">Eliminar el Continente Seleccionado</string>
+    <string name="removing_contient_dialog_header">¡Estás a punto de
+        eliminar el continente: %1$s!
+    </string>
+    <string name="removing_country_dialog_header">&#161; Estás a punto de
+        eliminar el país: %s! &#33;
+    </string>
+    <string name="removing_continent_confirmation_message">¿Estás
+        seguro que quieres eliminar este continente?</string>
+    <string name="removing_country_confirmation_message">¿Estás
+        seguro que quieres eliminar este país?</string>
+    <string name="remove_message_on_confirm_button_name">Sí</string>
+    <string name="remove_message_on_reject_button_name">No, regresa.</string>
+    <string name="priority_error_code_message">Código de Error 0x0001
+        [Predefinido] %1$s</string>
+    <string name="load_all_content_again_dialog_header">¡Estás a punto
+        de cargar los datos nuevamente!</string>
+    <string name="load_all_content_again_dialog_message">¿Estás seguro
+        que deseas cargar todo el contenido nuevamente?</string>
+    <string name="load_all_content_again_menu_item">Recargar todo el
+        contenido nuevamente</string>
+</resources>

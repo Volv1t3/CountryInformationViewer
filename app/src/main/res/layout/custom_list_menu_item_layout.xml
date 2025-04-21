@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+              android:fontFamily="@font/inter"
+              android:background="@drawable/rounded_corners_for_component_styling"
+              android:textColor="@color/cardview_dark_background"
+              android:textAlignment="center"
+              android:gravity="center_vertical|center|center_horizontal"
+              android:padding="10dp"
+              android:layout_marginBottom="5dp"
+              android:textSize="14sp"
+              android:layout_height="wrap_content"/>
+

@@ -1,0 +1,56 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/palette_Azure_Radiance"
+        android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inChooseACountryView_HeaderForLayout"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintVertical_bias="1.0"
+            android:background="@drawable/no_rounded_corners_for_header_styling">
+        <!--Agregregamos el texto requerido por el sistema-->
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/inChooseACountryView_TextForHeader"
+                  android:text="@string/select_a_country_caption"
+                  android:autoSizeMinTextSize="20sp"
+                  android:autoSizeStepGranularity="2sp"
+                  android:autoSizeMaxTextSize="30sp"
+                  android:textColor="@color/palette_Brilliant_Cobalt"
+                  android:autoSizeTextType="uniform"
+                  android:gravity="center_vertical|center"
+                  android:singleLine="false"
+                  android:maxLines="2"
+                  android:fontFamily="@font/inter_bold"
+                  android:layout_margin="10dp"
+                  android:padding="10dp"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/inChooseACountryView_RecyclerViewForComponents"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="fill"
+            android:textColor="@color/palette_Brilliant_Cobalt"
+
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inChooseACountryView_HeaderForLayout"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="@drawable/rounded_corners_for_component_styling_second"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

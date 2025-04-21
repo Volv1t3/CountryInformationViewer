@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/chooseContinentFragment">
+
+    <fragment
+            android:id="@+id/chooseContinentFragment"
+            android:name="com.evolvlabs.CountryInformationViewer.Controllers.ChooseAContinentController"
+            tools:layout="@layout/fragment_choose_a_continent_view"
+            android:label="Choose Continent Home Fragment ">
+        <action
+                android:id="@+id/action_continent_to_country"
+                app:destination="@id/chooseCountryFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/chooseCountryFragment"
+            android:name="com.evolvlabs.CountryInformationViewer.Controllers.ChooseACountryController"
+            tools:layout="@layout/fragment_choose_a_country_view"
+            android:label="Choose Country Second Fragment">
+        <action
+                android:id="@+id/action_country_to_info"
+                app:destination="@id/countryInfoFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action android:id="@+id/action_country_to_continent"
+                app:destination="@id/chooseContinentFragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim"
+                app:popUpTo="@id/chooseContinentFragment"
+                app:popUpToInclusive="true"
+        />
+    </fragment>
+
+    <fragment
+            tools:layout="@layout/fragment_here_is_their_info_view"
+            android:id="@+id/countryInfoFragment"
+            android:name="com.evolvlabs.CountryInformationViewer.Controllers.HereIsTheirInfoController"
+            android:label="Country Information">
+            <action android:id="@+id/action_info_to_country"
+                    app:destination="@id/chooseCountryFragment"
+                    app:enterAnim="@anim/nav_default_enter_anim"
+                    app:exitAnim="@anim/nav_default_exit_anim"
+                    app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                    app:popExitAnim="@anim/nav_default_pop_exit_anim"
+                    app:popUpTo="@id/chooseCountryFragment"
+                    app:popUpToInclusive="true"
+            />
+        <action android:id="@+id/action_info_to_continent"
+                app:destination="@id/chooseContinentFragment"
+                app:popUpTo="@id/chooseContinentFragment"
+                app:popUpToInclusive="true"/>
+    </fragment>
+</navigation>
